@@ -1,0 +1,1449 @@
+<!DOCTYPE html>
+                    <html>
+                        <head>
+                            <meta name='viewport' content='width=device-width, initial-scale=1'>
+                            <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css'>
+                            <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+                            <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js'></script>
+                            <style>
+                                body{ font-size:16px; }
+                                .main_div { background: #efefef;border-bottom: 4px solid #D32121;box-shadow: 0 -1px 2px #B89595; }
+                                .request_div { background:#93E0EA;padding:10px 10px; }
+                                .req_span{ background: #93EAA8; }
+                                .req_para { background: #93E0EA;margin-top:10px;margin-bottom:5px; overflow-wrap: break-word;}
+                                .res{ background: #93EAA8;padding: 10px; overflow-wrap: break-word;}
+                            </style>
+                        </head>
+                        <body>
+                            <div class='container-flude'>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">GET Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 12:31:58</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/me</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":[""]},"user":{"id":1,"role_id":1,"department_id":1,"designation_id":1,"level_id":1,"location_id":1,"premises_id":1,"pay_type_id":1,"reporting_to":0,"avatar_id":3,"username":"admin@gmail.com","name":"Super","address":"Surat","email":"admin@gmail.com","primary_number":"9876543210","alternate_number":null,"salary":20000,"date_join":"2021-12-31","date_resigned":null,"date_leaving":null,"otp":171580,"is_default":1,"tcode":"#1","privileges":"#1#2#3#4#5#6#7#8#9#10#12#13#14#15#16#17#18#19#20#21#22#23#24#25#26#27#28#29#30#","ip_address":"*","status":1,"deleted_at":"0","created_at":"2021-12-31T08:37:27.000000Z","updated_at":"2022-01-05T12:29:50.000000Z"}},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">GET Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 12:31:51</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/area/list</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["You have no permission."]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 12:29:50</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/reset-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com","otp":"171580","new_password":"123456"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Email sent successfully"]}},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 12:28:13</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/reset-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin123@gmail.com","otp":"171580","new_password":"123456"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"EMAIL":["Email is not valid"]}},"code":422}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 12:27:43</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Email sent successfully"]}},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 12:21:12</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Email sent successfully"]}},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 12:20:31</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Email sent successfully"]}},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 12:13:23</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/reset-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com","otp":"678539","new_password":"123456"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"OTP":["Sorry, you have not requested for forgot password yet"]}},"code":422}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 12:11:44</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Email sent successfully"]}},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 12:11:33</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin123@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"EMAIL":["Email is not valid"]}},"code":422}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 12:06:24</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/reset-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com","otp":"678539","new_password":"123456"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"OTP":["Sorry, you have not requested for forgot password yet"]}},"code":422}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 12:06:01</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/reset-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"accept":["application\/json"],"x-csrf-token":[""],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com","otp":"678539","new_password":"123456"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Access denied, invalid api key"]}},"code":403}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 12:06:01</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/reset-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"accept":["application\/json"],"x-csrf-token":[""],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com","otp":"678539","new_password":"123456"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Access denied, invalid api key"]}},"code":403}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 12:06:00</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/reset-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"accept":["application\/json"],"x-csrf-token":[""],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com","otp":"678539","new_password":"123456"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Access denied, invalid api key"]}},"code":403}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 12:06:00</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/reset-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"accept":["application\/json"],"x-csrf-token":[""],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com","otp":"678539","new_password":"123456"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Access denied, invalid api key"]}},"code":403}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 12:05:59</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/reset-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"accept":["application\/json"],"x-csrf-token":[""],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com","otp":"678539","new_password":"123456"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Access denied, invalid api key"]}},"code":403}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">GET Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 12:02:55</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/me</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":[""]},"user":{"id":1,"role_id":1,"department_id":1,"designation_id":1,"level_id":1,"location_id":1,"premises_id":1,"pay_type_id":1,"reporting_to":0,"avatar_id":3,"username":"admin@gmail.com","name":"Super","address":"Surat","email":"admin@gmail.com","primary_number":"9876543210","alternate_number":null,"salary":20000,"date_join":"2021-12-31","date_resigned":null,"date_leaving":null,"otp":null,"is_default":1,"tcode":"#1","privileges":"#1#2#3#4#5#6#7#8#9#10#12#13#14#15#16#17#18#19#20#21#22#23#24#25#26#27#28#29#30#","ip_address":"*","status":1,"deleted_at":"0","created_at":"2021-12-31T08:37:27.000000Z","updated_at":"2022-01-05T06:18:06.000000Z"}},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 12:02:35</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/reset-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"accept":["application\/json"],"x-csrf-token":[""],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com","otp":"678539","new_password":"123456"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Access denied, invalid api key"]}},"code":403}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 11:19:44</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Undefined variable $mail"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 11:18:17</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Undefined variable $mail"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 11:17:37</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Undefined variable $msg_body (View: \/opt\/lampp\/htdocs\/courier-services\/resources\/views\/emails\/myTestMail.blade.php)"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 11:11:26</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Undefined variable $mail"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 11:08:49</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Undefined array key \"title\" (View: \/opt\/lampp\/htdocs\/courier-services\/resources\/views\/emails\/myTestMail.blade.php)"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 11:08:32</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Undefined variable $mail"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 10:58:12</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Cannot use object of type Illuminate\\Mail\\Message as array (View: \/opt\/lampp\/htdocs\/courier-services\/resources\/views\/emails\/forgotpasswordmail.blade.php)"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 10:58:11</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Cannot use object of type Illuminate\\Mail\\Message as array (View: \/opt\/lampp\/htdocs\/courier-services\/resources\/views\/emails\/forgotpasswordmail.blade.php)"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 10:57:58</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Object of class Illuminate\\Mail\\Message could not be converted to string (View: \/opt\/lampp\/htdocs\/courier-services\/resources\/views\/emails\/forgotpasswordmail.blade.php)"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 10:57:15</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Object of class Illuminate\\Mail\\Message could not be converted to string (View: \/opt\/lampp\/htdocs\/courier-services\/resources\/views\/emails\/forgotpasswordmail.blade.php)"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 10:56:23</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Undefined variable $subject"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 10:55:35</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Undefined variable $subject"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 10:51:33</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Object of class Illuminate\\Mail\\Message could not be converted to string (View: \/opt\/lampp\/htdocs\/courier-services\/resources\/views\/emails\/forgotpasswordmail.blade.php)"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 10:50:04</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Object of class Illuminate\\Mail\\Message could not be converted to string (View: \/opt\/lampp\/htdocs\/courier-services\/resources\/views\/emails\/forgotpasswordmail.blade.php)"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 10:50:04</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Object of class Illuminate\\Mail\\Message could not be converted to string (View: \/opt\/lampp\/htdocs\/courier-services\/resources\/views\/emails\/forgotpasswordmail.blade.php)"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 10:50:04</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Object of class Illuminate\\Mail\\Message could not be converted to string (View: \/opt\/lampp\/htdocs\/courier-services\/resources\/views\/emails\/forgotpasswordmail.blade.php)"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 10:50:03</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Object of class Illuminate\\Mail\\Message could not be converted to string (View: \/opt\/lampp\/htdocs\/courier-services\/resources\/views\/emails\/forgotpasswordmail.blade.php)"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 10:48:28</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Object of class Illuminate\\Mail\\Message could not be converted to string (View: \/opt\/lampp\/htdocs\/courier-services\/resources\/views\/emails\/forgotpasswordmail.blade.php)"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 10:48:28</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Object of class Illuminate\\Mail\\Message could not be converted to string (View: \/opt\/lampp\/htdocs\/courier-services\/resources\/views\/emails\/forgotpasswordmail.blade.php)"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 10:48:27</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Object of class Illuminate\\Mail\\Message could not be converted to string (View: \/opt\/lampp\/htdocs\/courier-services\/resources\/views\/emails\/forgotpasswordmail.blade.php)"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 10:48:26</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Object of class Illuminate\\Mail\\Message could not be converted to string (View: \/opt\/lampp\/htdocs\/courier-services\/resources\/views\/emails\/forgotpasswordmail.blade.php)"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 10:47:20</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Object of class Illuminate\\Mail\\Message could not be converted to string (View: \/opt\/lampp\/htdocs\/courier-services\/resources\/views\/emails\/forgotpasswordmail.blade.php)"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 10:42:40</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Object of class Illuminate\\Mail\\Message could not be converted to string (View: \/opt\/lampp\/htdocs\/courier-services\/resources\/views\/emails\/forgotpasswordmail.blade.php)"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 10:41:52</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["htmlspecialchars(): Argument #1 ($string) must be of type string, Illuminate\\Mail\\Message given (View: \/opt\/lampp\/htdocs\/courier-services\/resources\/views\/emails\/forgotpasswordmail.blade.php)"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 10:40:42</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Undefined array key \"body\" (View: \/opt\/lampp\/htdocs\/courier-services\/resources\/views\/emails\/forgotpasswordmail.blade.php)"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 10:40:42</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Undefined array key \"body\" (View: \/opt\/lampp\/htdocs\/courier-services\/resources\/views\/emails\/forgotpasswordmail.blade.php)"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 10:40:41</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Undefined array key \"body\" (View: \/opt\/lampp\/htdocs\/courier-services\/resources\/views\/emails\/forgotpasswordmail.blade.php)"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 10:40:29</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Undefined array key \"body\" (View: \/opt\/lampp\/htdocs\/courier-services\/resources\/views\/emails\/forgotpasswordmail.blade.php)"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 10:38:27</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["htmlspecialchars(): Argument #1 ($string) must be of type string, Illuminate\\Mail\\Message given (View: \/opt\/lampp\/htdocs\/courier-services\/resources\/views\/emails\/forgotpasswordmail.blade.php)"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 10:37:47</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Undefined variable $message"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 10:37:42</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Undefined variable $message"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 10:37:04</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Undefined variable $message"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 10:36:14</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Undefined array key \"body\" (View: \/opt\/lampp\/htdocs\/courier-services\/resources\/views\/emails\/forgotpasswordmail.blade.php)"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 10:36:04</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["htmlspecialchars(): Argument #1 ($string) must be of type string, array given (View: \/opt\/lampp\/htdocs\/courier-services\/resources\/views\/emails\/forgotpasswordmail.blade.php)"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 10:35:28</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Undefined array key \"body\" (View: \/opt\/lampp\/htdocs\/courier-services\/resources\/views\/emails\/forgotpasswordmail.blade.php)"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 10:05:54</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Undefined variable $subject"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 10:05:52</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Undefined variable $subject"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 10:02:38</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Undefined variable $details"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 10:01:53</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["htmlspecialchars(): Argument #1 ($string) must be of type string, array given (View: \/opt\/lampp\/htdocs\/courier-services\/resources\/views\/emails\/myTestMail.blade.php)"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 10:01:38</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Undefined variable $msg_body (View: \/opt\/lampp\/htdocs\/courier-services\/resources\/views\/emails\/myTestMail.blade.php)"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 10:01:26</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Undefined array key \"title\" (View: \/opt\/lampp\/htdocs\/courier-services\/resources\/views\/emails\/myTestMail.blade.php)"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 09:58:11</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Undefined array key \"theme_color\" (View: \/opt\/lampp\/htdocs\/courier-services\/resources\/views\/emails\/layouts\/layout.blade.php)"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 09:45:59</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Connection could not be established with host smtp.gmail.com :stream_socket_client(): SSL operation failed with code 1. OpenSSL Error messages:\nerror:1408F10B:SSL routines:ssl3_get_record:wrong version number"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 09:45:48</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Expected response code 250 but got code \"530\", with message \"530 5.7.0 Must issue a STARTTLS command first. x33sm47469619pfh.212 - gsmtp\r\n\""]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 09:44:56</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Expected response code 250 but got code \"530\", with message \"530 5.7.0 Must issue a STARTTLS command first. f20sm47121397pfe.166 - gsmtp\r\n\""]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 09:42:36</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Connection could not be established with host smtp.gmail.com :stream_socket_client(): SSL operation failed with code 1. OpenSSL Error messages:\nerror:1408F10B:SSL routines:ssl3_get_record:wrong version number"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 09:39:56</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Connection could not be established with host smtp.gmail.com :stream_socket_client(): SSL operation failed with code 1. OpenSSL Error messages:\nerror:1408F10B:SSL routines:ssl3_get_record:wrong version number"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 09:39:45</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Connection could not be established with host smtp.gmail.com :stream_socket_client(): SSL operation failed with code 1. OpenSSL Error messages:\nerror:1408F10B:SSL routines:ssl3_get_record:wrong version number"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 09:39:41</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Connection could not be established with host smtp.gmail.com :stream_socket_client(): SSL operation failed with code 1. OpenSSL Error messages:\nerror:1408F10B:SSL routines:ssl3_get_record:wrong version number"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 09:37:07</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Connection could not be established with host smtp.gmail.com :stream_socket_client(): SSL operation failed with code 1. OpenSSL Error messages:\nerror:1408F10B:SSL routines:ssl3_get_record:wrong version number"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 09:35:46</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Connection could not be established with host mailhog :stream_socket_client(): php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 09:34:41</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["View [emails.layouts.layout] not found. (View: \/opt\/lampp\/htdocs\/courier-services\/resources\/views\/emails\/email.blade.php)"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 09:34:41</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["View [emails.layouts.layout] not found. (View: \/opt\/lampp\/htdocs\/courier-services\/resources\/views\/emails\/email.blade.php)"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 09:34:40</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["View [emails.layouts.layout] not found. (View: \/opt\/lampp\/htdocs\/courier-services\/resources\/views\/emails\/email.blade.php)"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 09:33:44</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["View [emails.layouts.layout] not found. (View: \/opt\/lampp\/htdocs\/courier-services\/resources\/views\/emails\/email.blade.php)"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 09:33:43</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["View [emails.layouts.layout] not found. (View: \/opt\/lampp\/htdocs\/courier-services\/resources\/views\/emails\/email.blade.php)"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 09:32:49</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["View [emails.layouts.layout] not found. (View: \/opt\/lampp\/htdocs\/courier-services\/resources\/views\/emails\/email.blade.php)"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 09:30:51</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["View [emails.email] not found."]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 09:20:06</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Method App\\Http\\Controllers\\V1\\AuthController::downloadFileS3 does not exist."]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 09:20:04</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Method App\\Http\\Controllers\\V1\\AuthController::downloadFileS3 does not exist."]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 09:15:14</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Method App\\Http\\Controllers\\V1\\AuthController::downloadFileS3 does not exist."]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 08:59:56</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/forgot-password</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzY2Mjg2LCJleHAiOjE2NDE1ODIyODYsIm5iZiI6MTY0MTM2NjI4NiwianRpIjoiQlVYcndHRlZlbWhuanRORiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RWlRmgFRYT-4T0tqvTyZPtABeOyyG6vG5bvOS0cdXG4"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"email":"admin@gmail.com"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Undefined variable $user"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">GET Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 06:14:10</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/me</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzYzMTQ1LCJleHAiOjE2NDEzNjY3NDUsIm5iZiI6MTY0MTM2MzE0NSwianRpIjoidUZEZkI3YVoyNWRBaWZ6OSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.4skZyYtXoqQUnuUu-pQw8f4E7Qzjz-LEXO3sAOL-rxI"],"host":["localhost"],"connection":["keep-alive"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":[""]},"user":{"id":1,"role_id":1,"department_id":1,"designation_id":1,"level_id":1,"location_id":1,"premises_id":1,"pay_type_id":1,"reporting_to":0,"avatar_id":3,"username":"admin@gmail.com","name":"Super","address":"Surat","email":"admin@gmail.com","primary_number":"9876543210","alternate_number":null,"salary":20000,"date_join":"2021-12-31","date_resigned":null,"date_leaving":null,"otp":null,"is_default":1,"tcode":"#1","privileges":"#1#2#3#4#5#6#7#8#9#10#12#13#14#15#16#17#18#19#20#21#22#23#24#25#26#27#28#29#30#","ip_address":"*","status":1,"created_at":"2021-12-31T08:37:27.000000Z","updated_at":"2021-12-31T08:37:27.000000Z"}},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">GET Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 06:11:02</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/me</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzAwMTE0LCJleHAiOjE2NDE1MTYxMTQsIm5iZiI6MTY0MTMwMDExNCwianRpIjoiQUVERHJpRWFkUmNyalFQTiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.mqG8wFeEaUC_AtW6T9OhaSbLiOze7AbYaBsUnxFlMvo"],"host":["localhost"],"connection":["keep-alive"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":[""]},"user":{"id":1,"role_id":1,"department_id":1,"designation_id":1,"level_id":1,"location_id":1,"premises_id":1,"pay_type_id":1,"reporting_to":0,"avatar_id":3,"username":"admin@gmail.com","name":"Super","address":"Surat","email":"admin@gmail.com","primary_number":"9876543210","alternate_number":null,"salary":20000,"date_join":"2021-12-31","date_resigned":null,"date_leaving":null,"otp":null,"is_default":1,"tcode":"#1","privileges":"#1#2#3#4#5#6#7#8#9#10#12#13#14#15#16#17#18#19#20#21#22#23#24#25#26#27#28#29#30#","ip_address":"*","status":1,"created_at":"2021-12-31T08:37:27.000000Z","updated_at":"2021-12-31T08:37:27.000000Z"}},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">GET Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 04:18:48</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/area/list</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzAwMTE0LCJleHAiOjE2NDE1MTYxMTQsIm5iZiI6MTY0MTMwMDExNCwianRpIjoiQUVERHJpRWFkUmNyalFQTiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.mqG8wFeEaUC_AtW6T9OhaSbLiOze7AbYaBsUnxFlMvo"],"host":["localhost"],"connection":["keep-alive"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["You have no permission."]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">GET Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-05 04:16:24</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/area/list</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxMzAwMTE0LCJleHAiOjE2NDE1MTYxMTQsIm5iZiI6MTY0MTMwMDExNCwianRpIjoiQUVERHJpRWFkUmNyalFQTiIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.mqG8wFeEaUC_AtW6T9OhaSbLiOze7AbYaBsUnxFlMvo"],"host":["localhost"],"connection":["keep-alive"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2021"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["You have no permission."]}},"code":423}
+                </div>
+            </div>
+                            </div>
+                        </body>
+                    </html>

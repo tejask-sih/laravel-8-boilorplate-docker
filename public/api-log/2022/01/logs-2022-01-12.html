@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+                    <html>
+                        <head>
+                            <meta name='viewport' content='width=device-width, initial-scale=1'>
+                            <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css'>
+                            <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+                            <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js'></script>
+                            <style>
+                                body{ font-size:16px; }
+                                .main_div { background: #efefef;border-bottom: 4px solid #D32121;box-shadow: 0 -1px 2px #B89595; }
+                                .request_div { background:#93E0EA;padding:10px 10px; }
+                                .req_span{ background: #93EAA8; }
+                                .req_para { background: #93E0EA;margin-top:10px;margin-bottom:5px; overflow-wrap: break-word;}
+                                .res{ background: #93EAA8;padding: 10px; overflow-wrap: break-word;}
+                            </style>
+                        </head>
+                        <body>
+                            <div class='container-flude'>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">GET Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 09:47:25</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/auth/me</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":[""]},"user":{"id":1,"role_id":1,"department_id":1,"designation_id":1,"level_id":1,"location_id":1,"premises_id":1,"pay_type_id":1,"reporting_to":0,"avatar_id":3,"username":"admin@gmail.com","name":"Super","address":"Surat","email":"admin@gmail.com","primary_number":"9876543210","alternate_number":null,"salary":20000,"date_join":"2021-12-31","date_resigned":null,"date_leaving":null,"otp":488253,"is_default":1,"tcode":"#1","overwrite":"0","privileges":"","ip_address":"*","status":1,"deleted_at":"0","created_at":"2021-12-31T08:37:27.000000Z","updated_at":"2022-01-10T10:35:12.000000Z","sales_contact":null}},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">GET Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 09:47:08</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/states/lov</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":[""]},"states":[{"id":19,"name":"Jharkhand"},{"id":18,"name":"Punjab"},{"id":17,"name":"Nagaland"},{"id":16,"name":"Manipur"},{"id":15,"name":"Maharashtra"},{"id":14,"name":"Madhya Pradesh\t"},{"id":13,"name":"Kerala"},{"id":12,"name":"Karnataka"},{"id":11,"name":"Jharkhand"},{"id":10,"name":"Himachal Pradesh"},{"id":9,"name":"Haryana"},{"id":8,"name":"Gujarat"},{"id":7,"name":"Goa"},{"id":6,"name":"Chhattisgarh"},{"id":5,"name":"Bihar"},{"id":4,"name":"Assam"},{"id":3,"name":"Arunachal Pradesh"},{"id":2,"name":"Andhra Pradesh"}]},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 09:43:45</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/location/activate/1</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Successfully Activated"]}},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 09:43:32</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/location/deactivate/1</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Successfully Deactivated"]}},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 09:43:09</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/premises/activate/1</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Invalid premises refrence"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">GET Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 09:42:46</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/location/list</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":[""]},"list":{"current_page":1,"data":[{"id":7,"name":"demo","status":1,"short_name":null,"zone":"A","primary_number":"1478521470","alternate_number1":"1478520147","alternate_number2":"3698520147","dms_costing":0,"created_at":"2022-01-11T08:40:32.000000Z","updated_at":"2022-01-11T09:12:32.000000Z","address1":"demo","address2":"demo2","address3":"demo3","city":"Surat","zipcode":"380015","state":"8","sales_contact":"demo@gmail.com","sales_phone":"852587410","sales_email":"demo@gmail.com","service_contact":"demo","service_phone":"9874563214","service_email":"demos@gmail.com"},{"id":4,"name":"Mehsana","status":1,"short_name":"Mhn","zone":"A","primary_number":"987456123","alternate_number1":null,"alternate_number2":null,"dms_costing":0,"created_at":"2022-01-05T05:40:54.000000Z","updated_at":"2022-01-05T05:40:54.000000Z","address1":null,"address2":null,"address3":null,"city":null,"zipcode":null,"state":null,"sales_contact":null,"sales_phone":null,"sales_email":null,"service_contact":null,"service_phone":null,"service_email":null},{"id":3,"name":"Surat","status":1,"short_name":"Srt","zone":"A","primary_number":"9873216540","alternate_number1":null,"alternate_number2":null,"dms_costing":0,"created_at":"2022-01-05T05:40:54.000000Z","updated_at":"2022-01-05T05:40:54.000000Z","address1":null,"address2":null,"address3":null,"city":null,"zipcode":null,"state":null,"sales_contact":null,"sales_phone":null,"sales_email":null,"service_contact":null,"service_phone":null,"service_email":null},{"id":2,"name":"Vadodara","status":1,"short_name":"Vdr","zone":"A","primary_number":"9638527410","alternate_number1":null,"alternate_number2":null,"dms_costing":0,"created_at":"2022-01-05T05:40:54.000000Z","updated_at":"2022-01-05T05:40:54.000000Z","address1":null,"address2":null,"address3":null,"city":null,"zipcode":null,"state":null,"sales_contact":null,"sales_phone":null,"sales_email":null,"service_contact":null,"service_phone":null,"service_email":null},{"id":1,"name":"Ahmedabd","status":1,"short_name":"Ahm","zone":"A","primary_number":"9876543210   ","alternate_number1":null,"alternate_number2":null,"dms_costing":0,"created_at":"2022-01-05T05:40:54.000000Z","updated_at":"2022-01-05T05:40:54.000000Z","address1":null,"address2":null,"address3":null,"city":null,"zipcode":null,"state":null,"sales_contact":null,"sales_phone":null,"sales_email":null,"service_contact":null,"service_phone":null,"service_email":null}],"first_page_url":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/location\/list?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/location\/list?page=1","links":[{"url":null,"label":"&laquo; Previous","active":false},{"url":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/location\/list?page=1","label":"1","active":true},{"url":null,"label":"Next &raquo;","active":false}],"next_page_url":null,"path":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/location\/list","per_page":50,"prev_page_url":null,"to":5,"total":5}},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">GET Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 09:38:09</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/cities/list</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":[""]},"list":{"current_page":1,"data":[{"id":22,"state_id":15,"name":"Nandurbar","status":1,"created_at":"2022-01-06 15:40:25","updated_at":"2022-01-06 15:40:25"},{"id":21,"state_id":15,"name":"Jalgaon","status":1,"created_at":"2022-01-06 15:40:25","updated_at":"2022-01-06 15:40:25"},{"id":20,"state_id":15,"name":"Nashik","status":1,"created_at":"2022-01-06 15:40:25","updated_at":"2022-01-06 15:40:25"},{"id":19,"state_id":15,"name":"Thane","status":1,"created_at":"2022-01-06 15:40:25","updated_at":"2022-01-06 15:40:25"},{"id":18,"state_id":15,"name":"Nagpur","status":1,"created_at":"2022-01-06 15:40:25","updated_at":"2022-01-06 15:40:25"},{"id":17,"state_id":15,"name":"Pune","status":1,"created_at":"2022-01-06 15:40:25","updated_at":"2022-01-06 15:40:25"},{"id":16,"state_id":15,"name":"Mumbai","status":1,"created_at":"2022-01-06 15:40:25","updated_at":"2022-01-06 15:40:25"},{"id":15,"state_id":8,"name":"Nadiad","status":1,"created_at":"2022-01-06 15:40:25","updated_at":"2022-01-06 15:40:25"},{"id":14,"state_id":8,"name":"Morbi","status":1,"created_at":"2022-01-06 15:40:25","updated_at":"2022-01-06 15:40:25"},{"id":13,"state_id":8,"name":"Navsari","status":1,"created_at":"2022-01-06 15:40:25","updated_at":"2022-01-06 15:40:25"},{"id":12,"state_id":8,"name":"Anand","status":1,"created_at":"2022-01-06 15:40:25","updated_at":"2022-01-06 15:40:25"},{"id":11,"state_id":8,"name":"Gandhidham","status":1,"created_at":"2022-01-06 15:40:25","updated_at":"2022-01-06 15:40:25"},{"id":10,"state_id":8,"name":"Gandhinagar","status":1,"created_at":"2022-01-06 15:40:25","updated_at":"2022-01-06 15:40:25"},{"id":9,"state_id":8,"name":"Junagadh","status":1,"created_at":"2022-01-06 15:40:25","updated_at":"2022-01-06 15:40:25"},{"id":8,"state_id":8,"name":"Jamnagar","status":1,"created_at":"2022-01-06 15:40:25","updated_at":"2022-01-06 15:40:25"},{"id":7,"state_id":8,"name":"Bhavnagar","status":1,"created_at":"2022-01-06 15:40:25","updated_at":"2022-01-06 15:40:25"},{"id":6,"state_id":8,"name":"Rajkot","status":1,"created_at":"2022-01-06 15:36:14","updated_at":"2022-01-06 15:36:14"},{"id":4,"state_id":8,"name":"Vadodara","status":1,"created_at":"2022-01-06 15:34:24","updated_at":"2022-01-06 15:34:24"},{"id":1,"state_id":8,"name":"Surat","status":1,"created_at":"2022-01-06 15:33:19","updated_at":"2022-01-06 15:33:19"},{"id":23,"state_id":8,"name":"Rajkot1","status":1,"created_at":"2022-01-06 15:40:25","updated_at":"2022-01-06 10:39:00"}],"first_page_url":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/cities\/list?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/cities\/list?page=1","links":[{"url":null,"label":"&laquo; Previous","active":false},{"url":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/cities\/list?page=1","label":"1","active":true},{"url":null,"label":"Next &raquo;","active":false}],"next_page_url":null,"path":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/cities\/list","per_page":50,"prev_page_url":null,"to":20,"total":20}},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">GET Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 09:36:54</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/area/list</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":[""]},"list":{"current_page":1,"data":[{"id":1,"city_id":1,"state_id":8,"location_id":null,"name":"udhana","status":1,"created_at":"2022-01-06 17:04:10","updated_at":"2022-01-06 17:04:10","state":{"id":8,"name":"Gujarat"},"city":{"id":1,"name":"Surat"}}],"first_page_url":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/area\/list?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/area\/list?page=1","links":[{"url":null,"label":"&laquo; Previous","active":false},{"url":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/area\/list?page=1","label":"1","active":true},{"url":null,"label":"Next &raquo;","active":false}],"next_page_url":null,"path":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/area\/list","per_page":50,"prev_page_url":null,"to":1,"total":1}},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">GET Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 09:36:38</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/area/list</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":[""]},"list":{"current_page":1,"data":[{"id":2,"city_id":22,"state_id":15,"location_id":null,"name":"Shindi colony","status":1,"created_at":"2022-01-06 18:15:20","updated_at":"2022-01-12 15:06:36","state":{"id":15,"name":"Maharashtra"},"city":{"id":22,"name":"Nandurbar"}},{"id":1,"city_id":1,"state_id":8,"location_id":null,"name":"udhana","status":1,"created_at":"2022-01-06 17:04:10","updated_at":"2022-01-06 17:04:10","state":{"id":8,"name":"Gujarat"},"city":{"id":1,"name":"Surat"}}],"first_page_url":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/area\/list?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/area\/list?page=1","links":[{"url":null,"label":"&laquo; Previous","active":false},{"url":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/area\/list?page=1","label":"1","active":true},{"url":null,"label":"Next &raquo;","active":false}],"next_page_url":null,"path":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/area\/list","per_page":50,"prev_page_url":null,"to":2,"total":2}},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">GET Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 09:35:56</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/area/list</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":[""]},"list":{"current_page":1,"data":[{"id":1,"city_id":1,"state_id":8,"location_id":null,"name":"udhana","status":1,"created_at":"2022-01-06 17:04:10","updated_at":"2022-01-06 17:04:10","state":{"id":8,"name":"Gujarat"},"city":{"id":1,"name":"Surat"}}],"first_page_url":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/area\/list?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/area\/list?page=1","links":[{"url":null,"label":"&laquo; Previous","active":false},{"url":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/area\/list?page=1","label":"1","active":true},{"url":null,"label":"Next &raquo;","active":false}],"next_page_url":null,"path":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/area\/list","per_page":50,"prev_page_url":null,"to":1,"total":1}},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">GET Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 09:33:50</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/cities/list</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":[""]},"list":{"current_page":1,"data":[{"id":22,"state_id":15,"name":"Nandurbar","status":1,"created_at":"2022-01-06 15:40:25","updated_at":"2022-01-06 15:40:25"},{"id":21,"state_id":15,"name":"Jalgaon","status":1,"created_at":"2022-01-06 15:40:25","updated_at":"2022-01-06 15:40:25"},{"id":20,"state_id":15,"name":"Nashik","status":1,"created_at":"2022-01-06 15:40:25","updated_at":"2022-01-06 15:40:25"},{"id":19,"state_id":15,"name":"Thane","status":1,"created_at":"2022-01-06 15:40:25","updated_at":"2022-01-06 15:40:25"},{"id":18,"state_id":15,"name":"Nagpur","status":1,"created_at":"2022-01-06 15:40:25","updated_at":"2022-01-06 15:40:25"},{"id":17,"state_id":15,"name":"Pune","status":1,"created_at":"2022-01-06 15:40:25","updated_at":"2022-01-06 15:40:25"},{"id":16,"state_id":15,"name":"Mumbai","status":1,"created_at":"2022-01-06 15:40:25","updated_at":"2022-01-06 15:40:25"},{"id":15,"state_id":8,"name":"Nadiad","status":1,"created_at":"2022-01-06 15:40:25","updated_at":"2022-01-06 15:40:25"},{"id":14,"state_id":8,"name":"Morbi","status":1,"created_at":"2022-01-06 15:40:25","updated_at":"2022-01-06 15:40:25"},{"id":13,"state_id":8,"name":"Navsari","status":1,"created_at":"2022-01-06 15:40:25","updated_at":"2022-01-06 15:40:25"},{"id":12,"state_id":8,"name":"Anand","status":1,"created_at":"2022-01-06 15:40:25","updated_at":"2022-01-06 15:40:25"},{"id":11,"state_id":8,"name":"Gandhidham","status":1,"created_at":"2022-01-06 15:40:25","updated_at":"2022-01-06 15:40:25"},{"id":10,"state_id":8,"name":"Gandhinagar","status":1,"created_at":"2022-01-06 15:40:25","updated_at":"2022-01-06 15:40:25"},{"id":9,"state_id":8,"name":"Junagadh","status":1,"created_at":"2022-01-06 15:40:25","updated_at":"2022-01-06 15:40:25"},{"id":8,"state_id":8,"name":"Jamnagar","status":1,"created_at":"2022-01-06 15:40:25","updated_at":"2022-01-06 15:40:25"},{"id":7,"state_id":8,"name":"Bhavnagar","status":1,"created_at":"2022-01-06 15:40:25","updated_at":"2022-01-06 15:40:25"},{"id":6,"state_id":8,"name":"Rajkot","status":1,"created_at":"2022-01-06 15:36:14","updated_at":"2022-01-06 15:36:14"},{"id":4,"state_id":8,"name":"Vadodara","status":1,"created_at":"2022-01-06 15:34:24","updated_at":"2022-01-06 15:34:24"},{"id":1,"state_id":8,"name":"Surat","status":1,"created_at":"2022-01-06 15:33:19","updated_at":"2022-01-06 15:33:19"},{"id":23,"state_id":8,"name":"Rajkot1","status":1,"created_at":"2022-01-06 15:40:25","updated_at":"2022-01-06 10:39:00"}],"first_page_url":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/cities\/list?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/cities\/list?page=1","links":[{"url":null,"label":"&laquo; Previous","active":false},{"url":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/cities\/list?page=1","label":"1","active":true},{"url":null,"label":"Next &raquo;","active":false}],"next_page_url":null,"path":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/cities\/list","per_page":50,"prev_page_url":null,"to":20,"total":20}},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">GET Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 09:24:44</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/inquiry_area/lov_by_location/1</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Invalid location refrence"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">GET Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 09:22:58</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/inquiry_area/lov_by_location/2</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":[""]},"Inquiery area":[{"id":2,"name":"Shindi colony","location":null,"state":null,"city":null}]},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">GET Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 09:22:14</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/inquiry_area/lov_by_location/2</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Call to undefined relationship [location] on model [App\\Models\\Admin\\InquiryArea]."]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">GET Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 09:21:40</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/inquiry_area/lov_by_location/2</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Invalid location refrence"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 09:08:43</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/inquiry_area/activate/2</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Successfully Activated"]}},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 09:08:31</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/inquiry_area/deactivate/2</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Successfully Deactivated"]}},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 09:07:46</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/inquiry_area/deactivate/2</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Successfully Activated"]}},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 09:07:01</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/inquiry_area/deactivate/1</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Invalid area reference"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 09:01:31</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/inquiry_area/destroy/3</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Successfully Deleted"]}},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 08:57:46</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/inquiry_area/edit/3</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"name":"test12","location_id":"1"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Successfully Updated"]}},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 08:57:35</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/inquiry_area/edit/3</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"name":"test","location_id":"1"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"name":["Area name already exists"]}},"code":422}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 08:57:05</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/inquiry_area/edit/3</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"name":"test","location_id":"1"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Method App\\Http\\Controllers\\V1\\Admin\\InquiryAreaController::auditUserLog does not exist."]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 08:51:41</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/inquiry_area/new</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"name":"demo","location_id":"2"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Successfully Created"]}},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 08:51:06</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/inquiry_area/new</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"name":"demo","location_id":"2"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Method App\\Http\\Controllers\\V1\\Admin\\InquiryAreaController::attributes does not exist."]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 08:48:23</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/inquiry_area/new</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"name":"test","city_id":"1","state_id":"8"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"location_id":["api.location.Id_DOES_NOT_EXIST"]}},"code":422}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">GET Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 08:47:06</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/inquiry_area/list</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":[""]},"list":{"current_page":1,"data":[{"id":2,"city_id":22,"state_id":15,"location_id":2,"name":"Shindi colony","status":1,"created_at":"2022-01-06T18:15:20.000000Z","updated_at":"2022-01-12T12:08:24.000000Z","state":{"id":15,"name":"Maharashtra"},"city":{"id":22,"name":"Nandurbar"}}],"first_page_url":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/inquiry_area\/list?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/inquiry_area\/list?page=1","links":[{"url":null,"label":"&laquo; Previous","active":false},{"url":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/inquiry_area\/list?page=1","label":"1","active":true},{"url":null,"label":"Next &raquo;","active":false}],"next_page_url":null,"path":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/inquiry_area\/list","per_page":50,"prev_page_url":null,"to":1,"total":1}},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">GET Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 08:45:06</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/inquiry_area/list</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":[""]},"list":{"current_page":1,"data":[{"id":2,"city_id":22,"state_id":15,"location_id":2,"name":"Shindi colony","status":1,"created_at":"2022-01-06T18:15:20.000000Z","updated_at":"2022-01-12T12:08:24.000000Z","state":{"id":15,"name":"Maharashtra"},"city":{"id":22,"name":"Nandurbar"}}],"first_page_url":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/inquiry_area\/list?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/inquiry_area\/list?page=1","links":[{"url":null,"label":"&laquo; Previous","active":false},{"url":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/inquiry_area\/list?page=1","label":"1","active":true},{"url":null,"label":"Next &raquo;","active":false}],"next_page_url":null,"path":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/inquiry_area\/list","per_page":50,"prev_page_url":null,"to":1,"total":1}},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">GET Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 08:44:02</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/inquiry_area/list</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modified' in 'order clause' (SQL: select * from `mst_areas` where `status` = 1 and `location_id` is not null order by `modified` desc, `created` desc, `id` desc limit 50 offset 0)"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">GET Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 08:38:03</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/area/list</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":[""]},"list":{"current_page":1,"data":[{"id":1,"city_id":1,"state_id":8,"location_id":null,"name":"udhana","status":1,"created_at":"2022-01-06 17:04:10","updated_at":"2022-01-06 17:04:10","state":{"id":8,"name":"Gujarat"},"city":{"id":1,"name":"Surat"}}],"first_page_url":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/area\/list?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/area\/list?page=1","links":[{"url":null,"label":"&laquo; Previous","active":false},{"url":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/area\/list?page=1","label":"1","active":true},{"url":null,"label":"Next &raquo;","active":false}],"next_page_url":null,"path":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/area\/list","per_page":50,"prev_page_url":null,"to":1,"total":1}},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">GET Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 06:40:01</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/premises/list</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":[""]},"list":{"current_page":1,"data":[{"id":3,"location_id":1,"type_id":1,"name":"Private @ Sanand Chokdi","short_name":null,"addess_line1":"Ahemedabad","addess_line2":"Sanandchowkdi","city_id":20,"state_id":15,"zipcode":"1562356","primary_number":"9869589659","alternate_number1":null,"alternate_number2":null,"status":1,"created_at":"2022-01-05T05:51:21.000000Z","updated_at":"2022-01-11T16:18:52.000000Z","location":{"id":1,"name":"Ahmedabd"},"premises_type":{"id":1,"name":"Private"},"state":{"id":15,"name":"Maharashtra"},"city":{"id":20,"name":"Nashik"}},{"id":5,"location_id":2,"type_id":1,"name":"demo1","short_name":"DM","addess_line1":"demo address1","addess_line2":"demo address2","city_id":18,"state_id":15,"zipcode":"350015","primary_number":"1478520147","alternate_number1":"9874563210","alternate_number2":"9871236540","status":1,"created_at":"2022-01-11T11:48:30.000000Z","updated_at":"2022-01-11T11:48:30.000000Z","location":{"id":2,"name":"Vadodara"},"premises_type":{"id":1,"name":"Private"},"state":{"id":15,"name":"Maharashtra"},"city":{"id":18,"name":"Nagpur"}}],"first_page_url":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/premises\/list?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/premises\/list?page=1","links":[{"url":null,"label":"&laquo; Previous","active":false},{"url":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/premises\/list?page=1","label":"1","active":true},{"url":null,"label":"Next &raquo;","active":false}],"next_page_url":null,"path":"http:\/\/localhost\/courier-services\/api\/v1\/admin\/premises\/list","per_page":50,"prev_page_url":null,"to":2,"total":2}},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">GET Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 06:39:07</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/area/lov_by_city/20</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Invalid area reference"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">GET Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 06:38:26</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/area/lov_by_city/2</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":[""]},"area":[{"id":2,"name":"Shindi colony","location_id":2,"city_id":22,"state_id":15,"location":{"id":2,"name":"Vadodara"},"state":{"id":15,"name":"Maharashtra"},"city":{"id":22,"name":"Nandurbar"}}]},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">GET Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 06:38:01</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/area/lov_by_city/2</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":[""]},"area":[{"id":2,"name":"Shindi colony","location_id":null,"city_id":22,"state_id":15,"location":null,"state":{"id":15,"name":"Maharashtra"},"city":{"id":22,"name":"Nandurbar"}}]},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">GET Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 06:37:51</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/area/lov_by_city/2</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":[""]},"area":[{"id":2,"name":"Shindi colony","location_id":null,"city_id":22,"state_id":15,"location":null,"state":{"id":15,"name":"Maharashtra"},"city":{"id":22,"name":"Nandurbar"}}]},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">GET Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 06:36:47</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/area/lov_by_city/2</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":[""]},"area":[{"id":2,"name":"Shindi colony","location_id":null,"city_id":22,"state_id":15,"state":{"id":15,"name":"Maharashtra"},"city":{"id":22,"name":"Nandurbar"}}]},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">GET Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 06:36:25</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/area/lov_by_city/2</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Call to undefined relationship [location] on model [App\\Models\\Admin\\Area]."]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">GET Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 06:08:32</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/premises/lov/60</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Invalid premises refrence"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">GET Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 06:08:12</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/premises/lov/60</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Invalid state refrence"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 05:46:52</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/premises/deactivate/6</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Successfully Deactivated"]}},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 05:46:39</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/premises/deactivate/6</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Successfully Deactivated"]}},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 05:46:00</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/premises/deactivate/6</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Successfully Activated"]}},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 05:45:55</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/premises/deactivate/60</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Invalid premises refrence"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 05:42:52</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/premises/activate/6</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Successfully Activated"]}},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 05:42:11</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/premises/activate/60</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Invalid premises refrence"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 05:35:13</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/premises/destroy/4</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Invalid premises refrence"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 05:35:04</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/premises/destroy/4</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Invalid premises refrence"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 05:33:19</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/premises/destroy/4</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Invalid city refrence"]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 05:33:01</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/premises/destroy/4</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Successfully Deleted"]}},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 05:32:48</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/premises/destroy/4</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["You have no permission."]}},"code":423}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 05:19:52</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/premises/edit/6</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"location_id":"1","type_id":"1","name":"demo12","short_name":"DM12","addess_line1":"demo1","addess_line2":"demo2","city_id":"16","state_id":"15","zipcode":"350015","primary_number":"2587412580","alternate_number1":"9876543210"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Successfully Updated"]}},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 05:17:44</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/premises/edit/6</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"location_id":"1","type_id":"1","name":"demo","short_name":"DM","addess_line1":"demo1","addess_line2":"demo2","city_id":"16","state_id":"15","zipcode":"350015","primary_number":"2587412580","alternate_number1":"9876543210"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"name":["Location name already exists"],"short_name":["Location name already exists"]}},"code":422}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 05:15:37</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/premises/edit/6</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"location_id":"1","type_id":"1","name":"Demo","short_name":"Dm","addess_line1":"demo1","addess_line2":"demo2","city_id":"16","state_id":"15","zipcode":"350012","primary_number":"9876543210","alternate_number1":"2587412580"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"name":["Location name already exists"],"short_name":["Location name already exists"]}},"code":422}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 05:13:05</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/premises/edit/6</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"location_id":"1","type_id":"1","name":"Demo","short_name":"Dm","addess_line1":"demo1","addess_line2":"demo2","city_id":"16","state_id":"15","zipcode":"350012","primary_number":"9876543210","alternate_number1":"2587412580"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"name":["Location name already exists"],"short_name":["Location name already exists"]}},"code":422}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 05:02:11</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/premises/new</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"location_id":"1","type_id":"1","name":"Test","short_name":"TST","addess_line1":"test address1","addess_line2":"test address2","city_id":"16","state_id":"15","zipcode":"350025","primary_number":"14785239"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"NOTIFICATION":["Successfully Created"]}},"code":200}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 05:01:26</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/premises/new</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"location_id":"1","type_id":"1","name":"Test","short_name":"TST","addess_line1":"test address1","addess_line2":"test address2","city_id":"167","state_id":"155","zipcode":"350025","primary_number":"14785239"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"city_id":["Invalid city refrence"],"state_id":["Invalid state refrence"]}},"code":422}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 04:48:53</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/premises/new</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"type_id":"7656"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"name":["Name cannot be blank"],"short_name":["Short Name cannot be blank"],"location_id":["api.locations.Id_DOES_NOT_EXIST"],"type_id":["Invalid premises type id"],"city_id":["api.cities.Id_DOES_NOT_EXIST"],"state_id":["api.states.Id_DOES_NOT_EXIST"],"addess_line1":["api.premise.ADDRESS1_REQUIRED"],"addess_line2":["api.premise.ADDRESS2_REQUIRED"],"zipcode":["api.premise.ZIPCODE_REQUIRED"],"primary_number":["It cannot be blank"]}},"code":422}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 04:48:37</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/premises/new</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"name":["Name cannot be blank"],"short_name":["Short Name cannot be blank"],"location_id":["api.locations.Id_DOES_NOT_EXIST"],"type_id":["api.premises_types.Id_DOES_NOT_EXIST"],"city_id":["api.cities.Id_DOES_NOT_EXIST"],"state_id":["api.states.Id_DOES_NOT_EXIST"],"addess_line1":["api.premise.ADDRESS1_REQUIRED"],"addess_line2":["api.premise.ADDRESS2_REQUIRED"],"zipcode":["api.premise.ZIPCODE_REQUIRED"],"primary_number":["It cannot be blank"]}},"code":422}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 04:45:57</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/area/new</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"name":["Name cannot be blank"],"city_id":["api.cities.Id_DOES_NOT_EXIST"],"state_id":["api.states.Id_DOES_NOT_EXIST"]}},"code":422}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 04:44:40</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/premises/new</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"name":["Name cannot be blank"],"short_name":["Short Name cannot be blank"],"location_id":["api.mst_locations.Id_DOES_NOT_EXIST"],"type_id":["api.mst_premises_types.Id_DOES_NOT_EXIST"],"city_id":["api.mst_cities.Id_DOES_NOT_EXIST"],"state_id":["api.mst_states.Id_DOES_NOT_EXIST"],"addess_line1":["api.premise.ADDRESS1_REQUIRED"],"addess_line2":["api.premise.ADDRESS2_REQUIRED"],"zipcode":["api.premise.ZIPCODE_REQUIRED"],"primary_number":["It cannot be blank"]}},"code":422}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 04:44:29</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/premises/new</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : {"short_name":"s"}</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"name":["Name cannot be blank"],"short_name":["Name must have at least 3 characters"],"location_id":["api.mst_locations.Id_DOES_NOT_EXIST"],"type_id":["api.mst_premises_types.Id_DOES_NOT_EXIST"],"city_id":["api.mst_cities.Id_DOES_NOT_EXIST"],"state_id":["api.mst_states.Id_DOES_NOT_EXIST"],"addess_line1":["api.premise.ADDRESS1_REQUIRED"],"addess_line2":["api.premise.ADDRESS2_REQUIRED"],"zipcode":["api.premise.ZIPCODE_REQUIRED"],"primary_number":["It cannot be blank"]}},"code":422}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 04:43:49</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/premises/new</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"name":["Name cannot be blank"],"short_name":["Short Name cannot be blank"],"location_id":["api.mst_locations.Id_DOES_NOT_EXIST"],"type_id":["api.mst_premises_types.Id_DOES_NOT_EXIST"],"city_id":["api.mst_cities.Id_DOES_NOT_EXIST"],"state_id":["api.mst_states.Id_DOES_NOT_EXIST"],"addess_line1":["api.premise.ADDRESS1_REQUIRED"],"addess_line2":["api.premise.ADDRESS2_REQUIRED"],"zipcode":["api.premise.ZIPCODE_REQUIRED"],"primary_number":["It cannot be blank"]}},"code":422}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 04:42:33</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/premises/new</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"name":["Name cannot be blank"],"short_name":["Short Name cannot be blank"],"location_id":["api.mst_locations.Id_DOES_NOT_EXIST"],"type_id":["api.mst_premises_types.Id_DOES_NOT_EXIST"],"city_id":["api.mst_cities.Id_DOES_NOT_EXIST"],"state_id":["api.mst_states.Id_DOES_NOT_EXIST"],"addess_line1":["api.premise.ADDRESS1_REQUIRED"],"addess_line2":["api.premise.ADDRESS2_REQUIRED"],"zipcode":["api.premise.NAME_REQUIRED"],"primary_number":["It cannot be blank"]}},"code":422}
+                </div>
+            </div>
+
+            <br>
+            <div class="main_div">
+                <div class="request_div">
+                    <b>Request :</b>
+                    <span class="req_span">POST Method</span>
+                    <b> Time </b> : <span class="req_span">2022-01-12 04:37:12</span>
+                    <b>URL</b> :  <span class="req_span">http://localhost/courier-services/api/v1/admin/premises/new</span>
+                    <div class="req_para"><b>Request Headers</b> ------- : {"authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2NvdXJpZXItc2VydmljZXNcL2FwaVwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjQxOTYyMjA4LCJleHAiOjE2NDE5OTgyMDgsIm5iZiI6MTY0MTk2MjIwOCwianRpIjoiUGpiZ05WMXVLT0VOU3hQUSIsInN1YiI6MSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B9QVv6l9VzRLw9R3Jgw3gbsBL75mAyKJFt9dr5VTYks"],"host":["localhost"],"connection":["keep-alive"],"content-length":["0"],"sec-ch-ua":["\"Google Chrome\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\""],"x-csrf-token":[""],"cpnyapikey":["cmscourier@2022"],"accept":["application\/json"],"sec-ch-ua-mobile":["?0"],"user-agent":["Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/95.0.4638.69 Safari\/537.36"],"platform":["WEB"],"sec-ch-ua-platform":["\"Linux\""],"origin":["http:\/\/localhost"],"sec-fetch-site":["same-origin"],"sec-fetch-mode":["cors"],"sec-fetch-dest":["empty"],"referer":["http:\/\/localhost\/courier-services\/api\/documentation"],"accept-encoding":["gzip, deflate, br"],"accept-language":["en-GB,en-US;q=0.9,en;q=0.8"]}</div>
+                    <div class="req_para"><b>GET Request</b> ------- : []</div>
+                    <div class="req_para"><b>POST Request</b> ------- : []</div>
+                </div>
+                <br>
+                <div class="res">
+                    <b>Json Response </b> -------<br>{"data":{"STATUS":{"name":["Name cannot be blank"],"short_name":["Short Name cannot be blank"],"location_id":["api.mst_locations.Id_DOES_NOT_EXIST"],"type_id":["api.mst_premises_types.Id_DOES_NOT_EXIST"],"city_id":["api.mst_cities.Id_DOES_NOT_EXIST"],"state_id":["api.mst_states.Id_DOES_NOT_EXIST"],"addess_line1":["api.premise.NAME_REQUIRED"],"addess_line2":["api.premise.NAME_REQUIRED"],"zipcode":["api.premise.NAME_REQUIRED"],"primary_number":["It cannot be blank"]}},"code":422}
+                </div>
+            </div>
+                            </div>
+                        </body>
+                    </html>
