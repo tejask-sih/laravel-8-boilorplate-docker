@@ -81,12 +81,12 @@ services:
         volumes:
           - ./:/var/www
         networks:
-          - machineskoda
+          - machineproject
 
 volumes:
   mysql:
     driver: local
 
 networks:
-  machineskoda:
+  machineproject:
     driver: bridge
