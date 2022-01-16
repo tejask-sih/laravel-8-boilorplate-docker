@@ -1,0 +1,92 @@
+version: "3.8"
+services:
+    projectapp:
+        build:
+          args:
+            user: project
+            uid: 1000
+          context: ./
+          dockerfile: ./Dockerfile
+        image: project-backend
+        container_name: project-backend
+        restart: unless-stopped
+        env_file: ./.env
+        environment:
+          APP_ENV : ${APP_ENV}
+        working_dir: /var/www/
+        volumes:
+          - ./:/var/www
+        networks:
+          - machineproject
+    db:
+        image: mysql
+        container_name: project-mysql
+        restart: always
+        env_file: ./.env
+        environment:
+            MYSQL_DATABASE: ${MYSQL_DATABASE}
+            MYSQL_USER: ${MYSQL_USER}
+            MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+            MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+        volumes:
+            - ${DATA_PATH_HOST}/mysql:/var/lib/mysql
+            - ${MYSQL_ENTRYPOINT_INITDB}:/docker-entrypoint-initdb.d
+        ports:
+            - "3309:3306"
+        networks:
+            - machineproject
+
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin:latest
+        container_name: project-pmadmin
+        restart: always
+        env_file: ./.env
+        environment:
+            # PMA_HOST: db
+            # PMA_USER: root
+            # PMA_PASSWORD: root
+            PMA_ARBITRARY: 1
+            MYSQL_USER: ${PMA_USER}
+            MYSQL_PASSWORD: ${PMA_PASSWORD}
+            MYSQL_ROOT_PASSWORD: ${PMA_ROOT_PASSWORD}
+            MAX_EXECUTION_TIME: ${PMA_MAX_EXECUTION_TIME}
+            MEMORY_LIMIT: ${PMA_MEMORY_LIMIT}
+            UPLOAD_LIMIT: ${PMA_UPLOAD_LIMIT}
+        ports:
+            - "8209:80"
+        depends_on:
+            - "${PMA_DB_ENGINE}"
+        networks:
+            - machineproject
+      
+    nginx:
+        image: nginx:1.17-alpine
+        container_name: project-nginx
+        restart: unless-stopped
+        ports:
+          - 8009:80
+        depends_on:
+          - projectapp
+        volumes:
+          - ./:/var/www
+          - ./docker-compose/nginx:/etc/nginx/conf.d
+        networks:
+          - machineproject
+
+    worker-parse-skoda:
+        image: project-backend
+        container_name: project-worker-parse
+        restart: unless-stopped
+        entrypoint: "php artisan queue:listen"
+        volumes:
+          - ./:/var/www
+        networks:
+          - machineskoda
+
+volumes:
+  mysql:
+    driver: local
+
+networks:
+  machineskoda:
+    driver: bridge
