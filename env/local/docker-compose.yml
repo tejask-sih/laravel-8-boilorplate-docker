@@ -73,15 +73,15 @@ services:
         networks:
           - machineproject
 
-    worker-parse-skoda:
-        image: project-backend
-        container_name: project-worker-parse
-        restart: unless-stopped
-        entrypoint: "php artisan queue:listen"
-        volumes:
-          - ./:/var/www
-        networks:
-          - machineproject
+    # worker-parse-skoda:
+    #     image: project-backend
+    #     container_name: project-worker-parse
+    #     restart: unless-stopped
+    #     entrypoint: "php artisan queue:listen"
+    #     volumes:
+    #       - ./:/var/www
+    #     networks:
+    #       - machineproject
 
 volumes:
   mysql:
