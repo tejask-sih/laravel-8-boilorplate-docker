@@ -253,8 +253,9 @@ local: ## Run: run in development mode
 	make init mode=local
 	make build
 	make up
-	# ./composer install
-	# ./php-artisan key:generate
+	./composer install
+	./php-artisan key:generate
+	./php-artisan jwt:secret
 	make logs
 
 run: ## Run: run in production mode
