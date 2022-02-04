@@ -73,7 +73,7 @@ services:
         networks:
           - machineproject
 
-    # worker-parse-skoda:
+    # worker-parse-project:
     #     image: project-backend
     #     container_name: project-worker-parse
     #     restart: unless-stopped
