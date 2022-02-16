@@ -13,20 +13,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call([  
-            Brandseeder::class,          
-            CompanySeeder::class, 
-            Departmentseeder::class, 
-            DesignationSeeder::class, 
-            LevelSeeder::class, 
-            LocationSeeder::class, 
-            PayTypeSeeder::class, 
-            PremisesSeeder::class, 
-            PremisesTypeSeeder::class, 
-            PrivilegeGroupSeeder::class,
-            RoleSeeder::class,  
+        $this->call([      
             EmailTemplateSeeder::class,  
             MediaSeeder::class,  
+            RoleSeeder::class,  
         ]);
     }
 }

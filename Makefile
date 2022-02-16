@@ -255,7 +255,6 @@ local: ## Run: run in development mode
 	make up
 	./composer install
 	./php-artisan key:generate
-	./php-artisan jwt:secret
 	make logs
 
 run: ## Run: run in production mode
@@ -265,7 +264,7 @@ run: ## Run: run in production mode
 	make build
 	make up
 
-sandbox: ## Run : run in sandbox mode 
+sandbox: ## Run : run in sandbox mode
 	cp -rf env/sandbox/. ./
 	make down
 	make init mode=sandbox

@@ -1,35 +1,40 @@
 <?php
 
-
-if (! function_exists('include_route_files')) {   
-    function include_route_files($folder)
+if (! function_exists('app_name')) {
+    /**
+     * Helper to grab the application name.
+     *
+     * @return mixed
+     */
+    function app_name()
     {
-        try {
-            $rdi = new RecursiveDirectoryIterator($folder);
-            $it = new RecursiveIteratorIterator($rdi);
-
-            while ($it->valid()) {
-                if (! $it->isDot() && $it->isFile() && $it->isReadable() && $it->current()->getExtension() === 'php') {
-                    require $it->key();
-                }
-
-                $it->next();
-            }
-        } catch (Exception $e) {
-            echo $e->getMessage();
-        }
+        return config('app.name');
     }
 }
 
-if(!function_exists('send_response'))
+if(!function_exists('send_json_response'))
 {
-    function send_response($request, $response)
+    function send_json_response($request, $response)
     {
+        //pr($response);
         addLog($request, $response);
         return response()->json($response['data'],$response['code']);
         // return response($response, $code);
     }
 }
+
+if (! function_exists('hoursandmins')) {
+    function hoursandmins($time, $format = '%02d:%02d')
+    {
+        if ($time < 1) {
+            return;
+        }
+        $hours = floor($time / 60);
+        $minutes = ($time % 60);
+        return sprintf($format, $hours, $minutes);
+    }
+}
+
 if(!function_exists('pr'))
 {
     function pr($data="")
@@ -39,15 +44,23 @@ if(!function_exists('pr'))
     }
 }
 
-
 if(!function_exists('addLog')){
     function addLog($request='', $response='')
     {
+        $systemLog = DB::table('sys_audit_log')->insert([
+            'user_id' => @Auth::guard()->user()->id,
+            'session_id' => NULL,  
+            'api' => $request->url(),
+            'request' => json_encode(['method'=>$request->method(),'Time'=> date('Y-m-d H:i:s'),'url'=>$request->url(),'Request Headers'=> json_encode(collect($request->header())->toArray()),'GET Request'=> json_encode($request->query()),'POST Request'=> json_encode($request->post())]),
+            'response' => json_encode($response),
+        ]);
+        
         $cyd    = date('Y/m');       
         $cf     = 'api-log/'.$cyd; 
         $fname  = $cf.'/logs-'.date('Y-m-d').'.html';
+       
         if(!is_dir($cf)) {  @mkdir($cf, 0777, true); }       
-
+        
         if(!file_exists($fname)){
             $html="<!DOCTYPE html>
                     <html>
@@ -98,6 +111,3 @@ if(!function_exists('addLog')){
         $myfile = file_put_contents($fname, $lines);
     }
 }
-
-
-?>

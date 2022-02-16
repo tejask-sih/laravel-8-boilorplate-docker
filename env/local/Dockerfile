@@ -17,15 +17,8 @@ RUN apt-get update && apt-get install -y \
     unzip \
     libmcrypt-dev \
     libcurl4-openssl-dev \
-    liblua5.3-dev \
-    lua5.3 \
-    && cp /usr/include/lua5.3/lua.h /usr/include \
-    && ln -s /usr/include/lua*.*/ /usr/include/lua \
-    && cp /usr/lib/x86_64-linux-gnu/liblua5.3.a /usr/lib/liblua.a \
-    && cp /usr/lib/x86_64-linux-gnu/liblua5.3.so /usr/lib/liblua.so \
     && pecl install mcrypt-1.0.3 \
-    && pecl install lua-2.0.7 \
-    && docker-php-ext-enable mcrypt lua
+    && docker-php-ext-enable mcrypt
 
 # Clear cache
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
@@ -39,7 +32,7 @@ RUN docker-php-ext-install \
         iconv \
         mbstring \
         pdo \
-        mysqli \
+		mysqli \
         pdo_mysql \
         pcntl \
         tokenizer \
@@ -62,12 +55,14 @@ RUN cd /usr/local/etc/php/conf.d/ && \
 
 # Create system user to run Composer and Artisan Commands
 RUN useradd -G www-data,root -u $uid -d /home/$user $user
-
 RUN mkdir -p /home/$user/.composer && \
-    chown -R $user:$user /home/$user
-
-RUN chmod 775 -R /var/www && \
+#    chown -R $user:$user /home/$user && \
+    chmod 775 -R /var/www && \
+	chmod 777 -R /home/$user && \
+	#chmod 777 -R /var/www/storage/logs && \
     chgrp www-data -R /var/www
+RUN chown -R www-data:www-data /var/www
+
 
 # Clean up
 RUN apt-get clean && \

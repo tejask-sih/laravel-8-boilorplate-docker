@@ -23,12 +23,12 @@ class BaseController extends Controller
      @OA\Info(
          description="L5 Swagger OpenApi description",
          version="1.0.0",
-         title="Courier Services OpenApi Documentation",
+         title="ProjectName OpenApi Documentation",
     )
 
     @OA\Server(
         url=L5_SWAGGER_CONST_HOST_V1,
-        description="CMS Courier Services V1"
+        description="ProjectName V1"
     )     
     */
     /**
@@ -42,22 +42,6 @@ class BaseController extends Controller
            securityScheme="apiAuth",
        ),
     */ 
-    /**
-        @OA\SecurityScheme(
-            securityScheme="PLATFORM",
-            type="apiKey",
-            in="header",
-            name="PLATFORM"
-        )
-    */  
-    /**
-        @OA\SecurityScheme(
-            securityScheme="CPNYAPIKEY",
-            type="apiKey",
-            in="header",
-            name="CPNYAPIKEY"
-        )
-    */
 
     public static function setResponse($type, $message=[], $result = [])
     {

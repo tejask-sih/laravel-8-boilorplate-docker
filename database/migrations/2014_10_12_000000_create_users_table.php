@@ -40,7 +40,7 @@ class CreateUsersTable extends Migration
             $table->string('tcode',100);
             $table->text('privileges');
             $table->text('ip_address');
-            $table->timestamp();
+            $table->timestamp('expire_at');
         });
 
         // Schema::table('users', function($table) {

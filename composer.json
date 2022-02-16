@@ -6,8 +6,9 @@
     "license": "MIT",
     "require": {
         "php": "^7.3|^8.0",
-        "darkaonline/l5-swagger": "*",
-        "dingo/api": "*",
+        "darkaonline/l5-swagger": "8.1.0",
+        "dingo/api": "3.0.8",
+        "doctrine/dbal": "^3.3",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.75",
@@ -31,7 +32,8 @@
             "Database\\Seeders\\": "database/seeders/"
         },
         "files":[
-            "app/Helpers/RouteHelper.php"            
+            "app/Helpers/Global/SystemHelper.php",
+            "app/Helpers/Global/GeneralHelper.php"             
         ]
     },
     "autoload-dev": {

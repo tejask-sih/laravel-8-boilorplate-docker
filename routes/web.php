@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Dingo\Api\Routing\Router;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+$api = app('Dingo\Api\Routing\Router');
+
+$api->version('v1', function (Router $api) {
+    $api->get('/', function () {
+        echo 'Welcome to project11';
+    });
 });
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
