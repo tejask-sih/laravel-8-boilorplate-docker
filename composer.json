@@ -33,7 +33,8 @@
         },
         "files":[
             "app/Helpers/Global/SystemHelper.php",
-            "app/Helpers/Global/GeneralHelper.php"             
+            "app/Helpers/Global/GeneralHelper.php",
+            "app/Helpers/RouteHelper.php"
         ]
     },
     "autoload-dev": {

@@ -11,9 +11,9 @@ use App\Traits\StoreImageTrait;
 use App\Models\Company;
 use App\Models\Media;
 use Illuminate\Support\Facades\Mail;
-/* 
+/*
 Created By Rahul
-Date : 31 Dec 2021 
+Date : 31 Dec 2021
 Base Controller
 */
 class BaseController extends Controller
@@ -29,7 +29,7 @@ class BaseController extends Controller
     @OA\Server(
         url=L5_SWAGGER_CONST_HOST_V1,
         description="ProjectName V1"
-    )     
+    )
     */
     /**
        @OA\SecurityScheme(
@@ -41,7 +41,7 @@ class BaseController extends Controller
            bearerFormat="JWT",
            securityScheme="apiAuth",
        ),
-    */ 
+    */
 
     public static function setResponse($type, $message=[], $result = [])
     {
@@ -91,7 +91,7 @@ class BaseController extends Controller
                 $default_message['NOTIFICATION'] = [__('api.notifications.INVALID_URL')];
                 break;
             case 'EXCEPTION':
-                $code = '';
+                $code = 500;
                 $default_message['NOTIFICATION'] = $message;
                 break;
             default:
@@ -154,23 +154,23 @@ class BaseController extends Controller
         $header_image_url = Media::where('id',$company->email_header_id)->value('url');
         //$header_image_url = $this->downloadFileS3($header_image_url);
         $theme_color = $company->theme_color;
-        
+
         $details = [
             'theme_color' => $theme_color,
             'header_img' => @$header_image_url,
             'footer' => $company->email_footer
-        ];        
+        ];
         // $details = [
         //     'msg_title' => 'Mail from testing.com',
         //     'msg_body' => 'This is for testing email using smtp',
         //     'theme_color' => $theme_color,
         //     'header_img' => @$header_image_url,
         //     'footer' => $company->email_footer
-        // ];       
-        // \Mail::to('rahulpatel@siliconithub.com')->send(new \App\Mail\MyTestMail($details,$subject));       
-        // pr("Email is Sent.");                           
-        // //$mail = \Mail::to('rahulpatel@siliconithub.com')->send(new \App\Mail\Forgotpassword($details,$body,$subject));      
-        
+        // ];
+        // \Mail::to('rahulpatel@siliconithub.com')->send(new \App\Mail\MyTestMail($details,$subject));
+        // pr("Email is Sent.");
+        // //$mail = \Mail::to('rahulpatel@siliconithub.com')->send(new \App\Mail\Forgotpassword($details,$body,$subject));
+
         // pr($mail);
         $mail = Mail::send('emails.email',[
                     "details" => $details,
