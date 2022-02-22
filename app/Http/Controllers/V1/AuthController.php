@@ -368,7 +368,7 @@ class AuthController extends BaseController
             $user->ip_address = $request->ip_address;
             $user->password = bcrypt($request->password);
             $user->status = '1';
-            $user->save();
+            $user->save(); 
             return response()->json(['success' => true,'data' => $user,'message' => 'User Save Successfully']);
         }
     }
