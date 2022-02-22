@@ -349,25 +349,7 @@ class AuthController extends BaseController
             $user = New User();
             $user->email = $request->email;
             $user->name = $request->name;
-            $user->role_id = $request->role_id;
-            $user->department_id = $request->department_id;
-            $user->designation_id = $request->designation_id;
-            $user->level_id = $request->level_id;
-            $user->location_id = $request->location_id;
-            $user->premises_id = $request->premises_id;
-            $user->pay_type_id = $request->pay_type_id;
-            $user->reporting_to = $request->reporting_to;
-            $user->avatar_id = $request->avatar_id;
-            $user->username = $request->username;
-            $user->primary_number = $request->phone;
-            $user->salary = $request->salary;
-            $user->date_join = $request->date_join;
-            $user->tcode = $request->tcode;
-            $user->address = $request->address;
-            $user->privileges = $request->privileges;
-            $user->ip_address = $request->ip_address;
             $user->password = bcrypt($request->password);
-            $user->status = '1';
             $user->save(); 
             return response()->json(['success' => true,'data' => $user,'message' => 'User Save Successfully']);
         }

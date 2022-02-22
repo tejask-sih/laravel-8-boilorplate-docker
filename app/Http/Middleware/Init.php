@@ -28,19 +28,19 @@ class Init
             } else {
                 // $result = ['status' => 422,'errors' => ["general" => ['Unauthorized Action']]];
                 // return response()->json($result,422);
-                $api_key        = self::VerifyAPIKEY($request);
-                $platform       = self::verifyPlatform($request);
-                $user_account   = self::VeriFyUserAccount($request);         
+                // $api_key        = self::VerifyAPIKEY($request);
+                // $platform       = self::verifyPlatform($request);
+                // $user_account   = self::VeriFyUserAccount($request);         
 
-                if(!empty($api_key)){ 
-                    return send_response($request,$api_key);
-                } elseif(!empty($platform)) { 
-                    return send_response($request,$platform);
-                } elseif(!empty($user_account)) {
-                    return send_response($request,$platform);
-                } else {
+                // if(!empty($api_key)){ 
+                //     return send_response($request,$api_key);
+                // } elseif(!empty($platform)) { 
+                //     return send_response($request,$platform);
+                // } elseif(!empty($user_account)) {
+                //     return send_response($request,$platform);
+                // } else {
                     return $next($request);
-                }
+                // }
             }
         } catch (\Exception $e) {
             $response = BaseController::setResponse('EXCEPTION');

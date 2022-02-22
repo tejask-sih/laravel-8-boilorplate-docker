@@ -15,32 +15,9 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('role_id')->unsigned();
-            $table->integer('department_id')->unsigned();
-            $table->integer('designation_id')->unsigned();
-            $table->integer('level_id')->unsigned();
-            $table->integer('location_id')->unsigned();
-            $table->integer('premises_id')->unsigned();
-            $table->integer('pay_type_id')->unsigned();
-            $table->integer('reporting_to');
-            $table->integer('avatar_id')->comment ='A file stored on S3 under /avatars folder';
-            $table->string('username',20);
             $table->string('password',800);
             $table->string('name',100);
-            $table->string('address',400);
             $table->string('email',100);
-            $table->string('primary_number',20);
-            $table->string('alternate_number',20)->nullable();
-            $table->double('salary', 10, 2)->default('0');
-            $table->date('date_join');
-            $table->date('date_resigned')->nullable();
-            $table->date('date_leaving')->nullable();
-            $table->integer('otp')->nullable();
-            $table->text('remember_token')->nullable();
-            $table->string('tcode',100);
-            $table->text('privileges');
-            $table->text('ip_address');
-            $table->timestamp('expire_at');
             $table->timestamps();
         });
 

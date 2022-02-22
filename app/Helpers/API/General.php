@@ -142,7 +142,7 @@ class General extends \Exception
                 $default_message['NOTIFICATION'] = [__('api.notifications.INVALID_USER')];
                 break;
             case 'EXCEPTION':
-                $code = '';
+                $code = 500;
                 $default_message['NOTIFICATION'] = $message;
                 break;
             default:
