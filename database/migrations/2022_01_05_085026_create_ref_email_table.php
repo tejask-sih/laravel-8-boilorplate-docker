@@ -19,8 +19,7 @@ class CreateRefEmailTable extends Migration
             $table->string('subject',400);
             $table->text('body');
             $table->tinyInteger('status')->comment('default value 0, 1 = Active, 0 = Deactive');
-            $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
-            $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP'));
+            $table->timestamps();
         });
 
         DB::statement("ALTER TABLE `ref_Email` CHANGE `status` `status` TINYINT(1) DEFAULT 0");

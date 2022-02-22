@@ -21,8 +21,7 @@ class CreatePrivilegesTable extends Migration
             $table->string('controller',400);
             $table->string('Tcode',400);
             $table->integer('seqno');
-            $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
-            $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP'));
+            $table->timestamps();
         });
 
         Schema::table('privileges', function($table) {
